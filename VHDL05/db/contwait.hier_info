@@ -1,0 +1,21 @@
+|contwait
+clk => q[0]~reg0.CLK
+clk => q[1]~reg0.CLK
+clk => q[2]~reg0.CLK
+clk => num[0].CLK
+clk => num[1].CLK
+clk => num[2].CLK
+clk => num[3].CLK
+ud[0] => Mux0.IN4
+ud[0] => Mux1.IN4
+ud[0] => Mux2.IN4
+ud[0] => Mux3.IN4
+ud[1] => Mux0.IN3
+ud[1] => Mux1.IN3
+ud[1] => Mux2.IN3
+ud[1] => Mux3.IN3
+q[0] <= q[0]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+q[1] <= q[1]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+q[2] <= q[2]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+

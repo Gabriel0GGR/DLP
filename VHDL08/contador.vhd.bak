@@ -1,0 +1,24 @@
+library ieee;
+use ieee.std_logic_1164.all;
+use ieee.numeric_std.all;
+library teste;
+use teste.my_package.all
+entity contador is
+	port
+	(
+		clk:in std_logic;
+		A,B,C,D,E,F,G:	out std_logic
+	);
+end contador;
+architecture contador_arch of contador is
+signal uni:unsigned(3 downto 0);
+begin
+	process(clk)
+	begin
+		if(clk'event and clk='0') then
+			uni<=uni+1;
+		end if;
+	end process;
+dec1:my_dec7seg_vhdl
+	port map(uni(0),uni(1),uni(2),uni(3),A,B,C,D,E,F,G);
+end architecture;

@@ -1,0 +1,45 @@
+|my_dec7seg
+A <= inst32.DB_MAX_OUTPUT_PORT_TYPE
+D3 => inst.IN0
+D3 => inst22.IN0
+D3 => inst24.IN0
+D3 => inst23.IN0
+D3 => inst25.IN0
+D3 => inst26.IN0
+D3 => inst21.IN0
+D3 => inst20.IN0
+D2 => inst1.IN0
+D2 => inst24.IN1
+D2 => inst15.IN1
+D2 => inst16.IN1
+D2 => inst17.IN1
+D2 => inst23.IN1
+D2 => inst25.IN1
+D2 => inst26.IN1
+D2 => inst18.IN1
+D1 => inst2.IN0
+D1 => inst22.IN2
+D1 => inst17.IN2
+D1 => inst25.IN2
+D1 => inst26.IN2
+D1 => inst13.IN2
+D1 => inst18.IN2
+D1 => inst21.IN2
+D1 => inst14.IN2
+D0 => inst12.IN3
+D0 => inst22.IN3
+D0 => inst24.IN3
+D0 => inst3.IN0
+D0 => inst16.IN3
+D0 => inst26.IN3
+D0 => inst18.IN3
+D0 => inst14.IN3
+D0 => inst20.IN3
+B <= inst31.DB_MAX_OUTPUT_PORT_TYPE
+C <= inst30.DB_MAX_OUTPUT_PORT_TYPE
+D <= inst29.DB_MAX_OUTPUT_PORT_TYPE
+E <= inst28.DB_MAX_OUTPUT_PORT_TYPE
+F <= inst27.DB_MAX_OUTPUT_PORT_TYPE
+G <= inst10.DB_MAX_OUTPUT_PORT_TYPE
+
+

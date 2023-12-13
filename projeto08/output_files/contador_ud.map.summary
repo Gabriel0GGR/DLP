@@ -1,0 +1,14 @@
+Analysis & Synthesis Status : Successful - Wed May 17 10:49:39 2023
+Quartus II 64-Bit Version : 13.0.1 Build 232 06/12/2013 SP 1 SJ Web Edition
+Revision Name : contador_ud
+Top-level Entity Name : contador_ud
+Family : Cyclone II
+Total logic elements : 11
+    Total combinational functions : 11
+    Dedicated logic registers : 5
+Total registers : 5
+Total pins : 9
+Total virtual pins : 0
+Total memory bits : 0
+Embedded Multiplier 9-bit elements : 0
+Total PLLs : 0

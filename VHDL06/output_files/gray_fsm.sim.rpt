@@ -1,0 +1,310 @@
+Simulator report for gray_fsm
+Wed Aug 09 10:25:25 2023
+Quartus II 64-Bit Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
+
+
+---------------------
+; Table of Contents ;
+---------------------
+  1. Legal Notice
+  2. Simulator Summary
+  3. Simulator Settings
+  4. Simulation Waveforms
+  5. Coverage Summary
+  6. Complete 1/0-Value Coverage
+  7. Missing 1-Value Coverage
+  8. Missing 0-Value Coverage
+  9. Simulator INI Usage
+ 10. Simulator Messages
+
+
+
+----------------
+; Legal Notice ;
+----------------
+Copyright (C) 1991-2013 Altera Corporation
+Your use of Altera Corporation's design tools, logic functions 
+and other software and tools, and its AMPP partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Altera Program License 
+Subscription Agreement, Altera MegaCore Function License 
+Agreement, or other applicable license agreement, including, 
+without limitation, that your use is for the sole purpose of 
+programming logic devices manufactured by Altera and sold by 
+Altera or its authorized distributors.  Please refer to the 
+applicable agreement for further details.
+
+
+
++--------------------------------------------+
+; Simulator Summary                          ;
++-----------------------------+--------------+
+; Type                        ; Value        ;
++-----------------------------+--------------+
+; Simulation Start Time       ; 0 ps         ;
+; Simulation End Time         ; 1.0 us       ;
+; Simulation Netlist Size     ; 95 nodes     ;
+; Simulation Coverage         ;      36.84 % ;
+; Total Number of Transitions ; 200          ;
+; Simulation Breakpoints      ; 0            ;
+; Family                      ; Cyclone II   ;
++-----------------------------+--------------+
+
+
++----------------------------------------------------------------------------------------------------------------------------------------------------+
+; Simulator Settings                                                                                                                                 ;
++--------------------------------------------------------------------------------------------+---------------------------------------+---------------+
+; Option                                                                                     ; Setting                               ; Default Value ;
++--------------------------------------------------------------------------------------------+---------------------------------------+---------------+
+; Simulation mode                                                                            ; Functional                            ; Timing        ;
+; Start time                                                                                 ; 0 ns                                  ; 0 ns          ;
+; Simulation results format                                                                  ; VWF                                   ;               ;
+; Vector input source                                                                        ; C:/altera/13.0sp1/VHDL06/Waveform.vwf ;               ;
+; Add pins automatically to simulation output waveforms                                      ; On                                    ; On            ;
+; Check outputs                                                                              ; Off                                   ; Off           ;
+; Report simulation coverage                                                                 ; On                                    ; On            ;
+; Display complete 1/0 value coverage report                                                 ; On                                    ; On            ;
+; Display missing 1-value coverage report                                                    ; On                                    ; On            ;
+; Display missing 0-value coverage report                                                    ; On                                    ; On            ;
+; Detect setup and hold time violations                                                      ; Off                                   ; Off           ;
+; Detect glitches                                                                            ; Off                                   ; Off           ;
+; Disable timing delays in Timing Simulation                                                 ; Off                                   ; Off           ;
+; Generate Signal Activity File                                                              ; Off                                   ; Off           ;
+; Generate VCD File for PowerPlay Power Analyzer                                             ; Off                                   ; Off           ;
+; Group bus channels in simulation results                                                   ; Off                                   ; Off           ;
+; Preserve fewer signal transitions to reduce memory requirements                            ; On                                    ; On            ;
+; Trigger vector comparison with the specified mode                                          ; INPUT_EDGE                            ; INPUT_EDGE    ;
+; Disable setup and hold time violations detection in input registers of bi-directional pins ; Off                                   ; Off           ;
+; Overwrite Waveform Inputs With Simulation Outputs                                          ; Off                                   ;               ;
+; Perform Glitch Filtering in Timing Simulation                                              ; Auto                                  ; Auto          ;
++--------------------------------------------------------------------------------------------+---------------------------------------+---------------+
+
+
++----------------------+
+; Simulation Waveforms ;
++----------------------+
+Waveform report data cannot be output to ASCII.
+Please use Quartus II 64-Bit to view the waveform report data.
+
+
++--------------------------------------------------------------------+
+; Coverage Summary                                                   ;
++-----------------------------------------------------+--------------+
+; Type                                                ; Value        ;
++-----------------------------------------------------+--------------+
+; Total coverage as a percentage                      ;      36.84 % ;
+; Total nodes checked                                 ; 95           ;
+; Total output ports checked                          ; 95           ;
+; Total output ports with complete 1/0-value coverage ; 35           ;
+; Total output ports with no 1/0-value coverage       ; 53           ;
+; Total output ports with no 1-value coverage         ; 54           ;
+; Total output ports with no 0-value coverage         ; 59           ;
++-----------------------------------------------------+--------------+
+
+
+The following table displays output ports that toggle between 1 and 0 during simulation.
++--------------------------------------------------------------------+
+; Complete 1/0-Value Coverage                                        ;
++------------------------+------------------------+------------------+
+; Node Name              ; Output Port Name       ; Output Port Type ;
++------------------------+------------------------+------------------+
+; |gray_fsm|estado.S0    ; |gray_fsm|estado.S0    ; regout           ;
+; |gray_fsm|estado.S1    ; |gray_fsm|estado.S1    ; regout           ;
+; |gray_fsm|estado.S2    ; |gray_fsm|estado.S2    ; regout           ;
+; |gray_fsm|estado.S14   ; |gray_fsm|estado.S14   ; regout           ;
+; |gray_fsm|WideOr0      ; |gray_fsm|WideOr0      ; out0             ;
+; |gray_fsm|estado.S15   ; |gray_fsm|estado.S15   ; regout           ;
+; |gray_fsm|WideOr3      ; |gray_fsm|WideOr3      ; out0             ;
+; |gray_fsm|clk          ; |gray_fsm|clk          ; out              ;
+; |gray_fsm|reset        ; |gray_fsm|reset        ; out              ;
+; |gray_fsm|saida[0]     ; |gray_fsm|saida[0]     ; pin_out          ;
+; |gray_fsm|saida[3]     ; |gray_fsm|saida[3]     ; pin_out          ;
+; |gray_fsm|estado~0     ; |gray_fsm|estado~0     ; out0             ;
+; |gray_fsm|estado~1     ; |gray_fsm|estado~1     ; out0             ;
+; |gray_fsm|WideOr0~0    ; |gray_fsm|WideOr0~0    ; out0             ;
+; |gray_fsm|WideOr0~1    ; |gray_fsm|WideOr0~1    ; out0             ;
+; |gray_fsm|WideOr0~2    ; |gray_fsm|WideOr0~2    ; out0             ;
+; |gray_fsm|WideOr1~2    ; |gray_fsm|WideOr1~2    ; out0             ;
+; |gray_fsm|WideOr1~3    ; |gray_fsm|WideOr1~3    ; out0             ;
+; |gray_fsm|estado~5     ; |gray_fsm|estado~5     ; out0             ;
+; |gray_fsm|estado~9     ; |gray_fsm|estado~9     ; out0             ;
+; |gray_fsm|Selector0~0  ; |gray_fsm|Selector0~0  ; out0             ;
+; |gray_fsm|Selector0~1  ; |gray_fsm|Selector0~1  ; out0             ;
+; |gray_fsm|Selector1~0  ; |gray_fsm|Selector1~0  ; out0             ;
+; |gray_fsm|Selector1~2  ; |gray_fsm|Selector1~2  ; out0             ;
+; |gray_fsm|Selector2~0  ; |gray_fsm|Selector2~0  ; out0             ;
+; |gray_fsm|Selector2~2  ; |gray_fsm|Selector2~2  ; out0             ;
+; |gray_fsm|Selector3~0  ; |gray_fsm|Selector3~0  ; out0             ;
+; |gray_fsm|Selector3~2  ; |gray_fsm|Selector3~2  ; out0             ;
+; |gray_fsm|Selector13~0 ; |gray_fsm|Selector13~0 ; out0             ;
+; |gray_fsm|Selector13~1 ; |gray_fsm|Selector13~1 ; out0             ;
+; |gray_fsm|Selector14~0 ; |gray_fsm|Selector14~0 ; out0             ;
+; |gray_fsm|Selector14~1 ; |gray_fsm|Selector14~1 ; out0             ;
+; |gray_fsm|Selector15~0 ; |gray_fsm|Selector15~0 ; out0             ;
+; |gray_fsm|Selector15~1 ; |gray_fsm|Selector15~1 ; out0             ;
+; |gray_fsm|Selector15~2 ; |gray_fsm|Selector15~2 ; out0             ;
++------------------------+------------------------+------------------+
+
+
+The following table displays output ports that do not toggle to 1 during simulation.
++--------------------------------------------------------------------+
+; Missing 1-Value Coverage                                           ;
++------------------------+------------------------+------------------+
+; Node Name              ; Output Port Name       ; Output Port Type ;
++------------------------+------------------------+------------------+
+; |gray_fsm|estado.S4    ; |gray_fsm|estado.S4    ; regout           ;
+; |gray_fsm|estado.S5    ; |gray_fsm|estado.S5    ; regout           ;
+; |gray_fsm|estado.S6    ; |gray_fsm|estado.S6    ; regout           ;
+; |gray_fsm|estado.S7    ; |gray_fsm|estado.S7    ; regout           ;
+; |gray_fsm|estado.S8    ; |gray_fsm|estado.S8    ; regout           ;
+; |gray_fsm|estado.S9    ; |gray_fsm|estado.S9    ; regout           ;
+; |gray_fsm|estado.S10   ; |gray_fsm|estado.S10   ; regout           ;
+; |gray_fsm|estado.S11   ; |gray_fsm|estado.S11   ; regout           ;
+; |gray_fsm|estado.S12   ; |gray_fsm|estado.S12   ; regout           ;
+; |gray_fsm|estado.S13   ; |gray_fsm|estado.S13   ; regout           ;
+; |gray_fsm|WideOr1      ; |gray_fsm|WideOr1      ; out0             ;
+; |gray_fsm|WideOr2      ; |gray_fsm|WideOr2      ; out0             ;
+; |gray_fsm|saida[2]     ; |gray_fsm|saida[2]     ; pin_out          ;
+; |gray_fsm|WideOr0~4    ; |gray_fsm|WideOr0~4    ; out0             ;
+; |gray_fsm|WideOr0~5    ; |gray_fsm|WideOr0~5    ; out0             ;
+; |gray_fsm|WideOr0~6    ; |gray_fsm|WideOr0~6    ; out0             ;
+; |gray_fsm|WideOr0~7    ; |gray_fsm|WideOr0~7    ; out0             ;
+; |gray_fsm|WideOr2~0    ; |gray_fsm|WideOr2~0    ; out0             ;
+; |gray_fsm|WideOr2~1    ; |gray_fsm|WideOr2~1    ; out0             ;
+; |gray_fsm|WideOr4~0    ; |gray_fsm|WideOr4~0    ; out0             ;
+; |gray_fsm|WideOr3~0    ; |gray_fsm|WideOr3~0    ; out0             ;
+; |gray_fsm|WideOr1~0    ; |gray_fsm|WideOr1~0    ; out0             ;
+; |gray_fsm|WideOr1~1    ; |gray_fsm|WideOr1~1    ; out0             ;
+; |gray_fsm|Selector0~2  ; |gray_fsm|Selector0~2  ; out0             ;
+; |gray_fsm|Selector1~1  ; |gray_fsm|Selector1~1  ; out0             ;
+; |gray_fsm|Selector2~1  ; |gray_fsm|Selector2~1  ; out0             ;
+; |gray_fsm|Selector3~1  ; |gray_fsm|Selector3~1  ; out0             ;
+; |gray_fsm|Selector4~1  ; |gray_fsm|Selector4~1  ; out0             ;
+; |gray_fsm|Selector5~0  ; |gray_fsm|Selector5~0  ; out0             ;
+; |gray_fsm|Selector5~1  ; |gray_fsm|Selector5~1  ; out0             ;
+; |gray_fsm|Selector5~2  ; |gray_fsm|Selector5~2  ; out0             ;
+; |gray_fsm|Selector6~0  ; |gray_fsm|Selector6~0  ; out0             ;
+; |gray_fsm|Selector6~1  ; |gray_fsm|Selector6~1  ; out0             ;
+; |gray_fsm|Selector6~2  ; |gray_fsm|Selector6~2  ; out0             ;
+; |gray_fsm|Selector7~0  ; |gray_fsm|Selector7~0  ; out0             ;
+; |gray_fsm|Selector7~1  ; |gray_fsm|Selector7~1  ; out0             ;
+; |gray_fsm|Selector7~2  ; |gray_fsm|Selector7~2  ; out0             ;
+; |gray_fsm|Selector8~0  ; |gray_fsm|Selector8~0  ; out0             ;
+; |gray_fsm|Selector8~1  ; |gray_fsm|Selector8~1  ; out0             ;
+; |gray_fsm|Selector8~2  ; |gray_fsm|Selector8~2  ; out0             ;
+; |gray_fsm|Selector9~0  ; |gray_fsm|Selector9~0  ; out0             ;
+; |gray_fsm|Selector9~1  ; |gray_fsm|Selector9~1  ; out0             ;
+; |gray_fsm|Selector9~2  ; |gray_fsm|Selector9~2  ; out0             ;
+; |gray_fsm|Selector10~0 ; |gray_fsm|Selector10~0 ; out0             ;
+; |gray_fsm|Selector10~1 ; |gray_fsm|Selector10~1 ; out0             ;
+; |gray_fsm|Selector10~2 ; |gray_fsm|Selector10~2 ; out0             ;
+; |gray_fsm|Selector11~0 ; |gray_fsm|Selector11~0 ; out0             ;
+; |gray_fsm|Selector11~1 ; |gray_fsm|Selector11~1 ; out0             ;
+; |gray_fsm|Selector11~2 ; |gray_fsm|Selector11~2 ; out0             ;
+; |gray_fsm|Selector12~0 ; |gray_fsm|Selector12~0 ; out0             ;
+; |gray_fsm|Selector12~1 ; |gray_fsm|Selector12~1 ; out0             ;
+; |gray_fsm|Selector12~2 ; |gray_fsm|Selector12~2 ; out0             ;
+; |gray_fsm|Selector13~2 ; |gray_fsm|Selector13~2 ; out0             ;
+; |gray_fsm|Selector14~2 ; |gray_fsm|Selector14~2 ; out0             ;
++------------------------+------------------------+------------------+
+
+
+The following table displays output ports that do not toggle to 0 during simulation.
++--------------------------------------------------------------------+
+; Missing 0-Value Coverage                                           ;
++------------------------+------------------------+------------------+
+; Node Name              ; Output Port Name       ; Output Port Type ;
++------------------------+------------------------+------------------+
+; |gray_fsm|estado.S3    ; |gray_fsm|estado.S3    ; regout           ;
+; |gray_fsm|estado.S4    ; |gray_fsm|estado.S4    ; regout           ;
+; |gray_fsm|estado.S5    ; |gray_fsm|estado.S5    ; regout           ;
+; |gray_fsm|estado.S6    ; |gray_fsm|estado.S6    ; regout           ;
+; |gray_fsm|estado.S7    ; |gray_fsm|estado.S7    ; regout           ;
+; |gray_fsm|estado.S8    ; |gray_fsm|estado.S8    ; regout           ;
+; |gray_fsm|estado.S9    ; |gray_fsm|estado.S9    ; regout           ;
+; |gray_fsm|estado.S10   ; |gray_fsm|estado.S10   ; regout           ;
+; |gray_fsm|estado.S11   ; |gray_fsm|estado.S11   ; regout           ;
+; |gray_fsm|estado.S12   ; |gray_fsm|estado.S12   ; regout           ;
+; |gray_fsm|estado.S13   ; |gray_fsm|estado.S13   ; regout           ;
+; |gray_fsm|WideOr1      ; |gray_fsm|WideOr1      ; out0             ;
+; |gray_fsm|up           ; |gray_fsm|up           ; out              ;
+; |gray_fsm|saida[1]     ; |gray_fsm|saida[1]     ; pin_out          ;
+; |gray_fsm|saida[2]     ; |gray_fsm|saida[2]     ; pin_out          ;
+; |gray_fsm|WideOr0~3    ; |gray_fsm|WideOr0~3    ; out0             ;
+; |gray_fsm|WideOr0~4    ; |gray_fsm|WideOr0~4    ; out0             ;
+; |gray_fsm|WideOr0~5    ; |gray_fsm|WideOr0~5    ; out0             ;
+; |gray_fsm|WideOr0~6    ; |gray_fsm|WideOr0~6    ; out0             ;
+; |gray_fsm|WideOr0~7    ; |gray_fsm|WideOr0~7    ; out0             ;
+; |gray_fsm|WideOr2~0    ; |gray_fsm|WideOr2~0    ; out0             ;
+; |gray_fsm|WideOr2~1    ; |gray_fsm|WideOr2~1    ; out0             ;
+; |gray_fsm|WideOr4~0    ; |gray_fsm|WideOr4~0    ; out0             ;
+; |gray_fsm|WideOr3~0    ; |gray_fsm|WideOr3~0    ; out0             ;
+; |gray_fsm|WideOr1~0    ; |gray_fsm|WideOr1~0    ; out0             ;
+; |gray_fsm|WideOr1~1    ; |gray_fsm|WideOr1~1    ; out0             ;
+; |gray_fsm|Selector0~2  ; |gray_fsm|Selector0~2  ; out0             ;
+; |gray_fsm|Selector1~1  ; |gray_fsm|Selector1~1  ; out0             ;
+; |gray_fsm|Selector2~1  ; |gray_fsm|Selector2~1  ; out0             ;
+; |gray_fsm|Selector3~1  ; |gray_fsm|Selector3~1  ; out0             ;
+; |gray_fsm|Selector4~0  ; |gray_fsm|Selector4~0  ; out0             ;
+; |gray_fsm|Selector4~1  ; |gray_fsm|Selector4~1  ; out0             ;
+; |gray_fsm|Selector4~2  ; |gray_fsm|Selector4~2  ; out0             ;
+; |gray_fsm|Selector5~0  ; |gray_fsm|Selector5~0  ; out0             ;
+; |gray_fsm|Selector5~1  ; |gray_fsm|Selector5~1  ; out0             ;
+; |gray_fsm|Selector5~2  ; |gray_fsm|Selector5~2  ; out0             ;
+; |gray_fsm|Selector6~0  ; |gray_fsm|Selector6~0  ; out0             ;
+; |gray_fsm|Selector6~1  ; |gray_fsm|Selector6~1  ; out0             ;
+; |gray_fsm|Selector6~2  ; |gray_fsm|Selector6~2  ; out0             ;
+; |gray_fsm|Selector7~0  ; |gray_fsm|Selector7~0  ; out0             ;
+; |gray_fsm|Selector7~1  ; |gray_fsm|Selector7~1  ; out0             ;
+; |gray_fsm|Selector7~2  ; |gray_fsm|Selector7~2  ; out0             ;
+; |gray_fsm|Selector8~0  ; |gray_fsm|Selector8~0  ; out0             ;
+; |gray_fsm|Selector8~1  ; |gray_fsm|Selector8~1  ; out0             ;
+; |gray_fsm|Selector8~2  ; |gray_fsm|Selector8~2  ; out0             ;
+; |gray_fsm|Selector9~0  ; |gray_fsm|Selector9~0  ; out0             ;
+; |gray_fsm|Selector9~1  ; |gray_fsm|Selector9~1  ; out0             ;
+; |gray_fsm|Selector9~2  ; |gray_fsm|Selector9~2  ; out0             ;
+; |gray_fsm|Selector10~0 ; |gray_fsm|Selector10~0 ; out0             ;
+; |gray_fsm|Selector10~1 ; |gray_fsm|Selector10~1 ; out0             ;
+; |gray_fsm|Selector10~2 ; |gray_fsm|Selector10~2 ; out0             ;
+; |gray_fsm|Selector11~0 ; |gray_fsm|Selector11~0 ; out0             ;
+; |gray_fsm|Selector11~1 ; |gray_fsm|Selector11~1 ; out0             ;
+; |gray_fsm|Selector11~2 ; |gray_fsm|Selector11~2 ; out0             ;
+; |gray_fsm|Selector12~0 ; |gray_fsm|Selector12~0 ; out0             ;
+; |gray_fsm|Selector12~1 ; |gray_fsm|Selector12~1 ; out0             ;
+; |gray_fsm|Selector12~2 ; |gray_fsm|Selector12~2 ; out0             ;
+; |gray_fsm|Selector13~2 ; |gray_fsm|Selector13~2 ; out0             ;
+; |gray_fsm|Selector14~2 ; |gray_fsm|Selector14~2 ; out0             ;
++------------------------+------------------------+------------------+
+
+
++---------------------+
+; Simulator INI Usage ;
++--------+------------+
+; Option ; Usage      ;
++--------+------------+
+
+
++--------------------+
+; Simulator Messages ;
++--------------------+
+Info: *******************************************************************
+Info: Running Quartus II 64-Bit Simulator
+    Info: Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
+    Info: Processing started: Wed Aug 09 10:25:25 2023
+Info: Command: quartus_sim --simulation_results_format=VWF gray_fsm -c gray_fsm
+Info (324025): Using vector source file "C:/altera/13.0sp1/VHDL06/Waveform.vwf"
+Info (310003): Option to preserve fewer signal transitions to reduce memory requirements is enabled
+    Info (310004): Simulation has been partitioned into sub-simulations according to the maximum transition count determined by the engine. Transitions from memory will be flushed out to disk at the end of each sub-simulation to reduce memory requirements.
+Info (310002): Simulation partitioned into 1 sub-simulations
+Info (328053): Simulation coverage is      36.84 %
+Info (328052): Number of transitions in simulation is 200
+Info (324045): Vector file gray_fsm.sim.vwf is saved in VWF text format. You can compress it into CVWF format in order to reduce file size. For more details please refer to the Quartus II Help.
+Info: Quartus II 64-Bit Simulator was successful. 0 errors, 0 warnings
+    Info: Peak virtual memory: 312 megabytes
+    Info: Processing ended: Wed Aug 09 10:25:25 2023
+    Info: Elapsed time: 00:00:00
+    Info: Total CPU time (on all processors): 00:00:00
+
+

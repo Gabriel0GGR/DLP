@@ -1,0 +1,326 @@
+Simulator report for contador_2dig
+Wed Apr 19 11:09:27 2023
+Quartus II 64-Bit Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
+
+
+---------------------
+; Table of Contents ;
+---------------------
+  1. Legal Notice
+  2. Simulator Summary
+  3. Simulator Settings
+  4. Simulation Waveforms
+  5. Coverage Summary
+  6. Complete 1/0-Value Coverage
+  7. Missing 1-Value Coverage
+  8. Missing 0-Value Coverage
+  9. Simulator INI Usage
+ 10. Simulator Messages
+
+
+
+----------------
+; Legal Notice ;
+----------------
+Copyright (C) 1991-2013 Altera Corporation
+Your use of Altera Corporation's design tools, logic functions 
+and other software and tools, and its AMPP partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Altera Program License 
+Subscription Agreement, Altera MegaCore Function License 
+Agreement, or other applicable license agreement, including, 
+without limitation, that your use is for the sole purpose of 
+programming logic devices manufactured by Altera and sold by 
+Altera or its authorized distributors.  Please refer to the 
+applicable agreement for further details.
+
+
+
++--------------------------------------------+
+; Simulator Summary                          ;
++-----------------------------+--------------+
+; Type                        ; Value        ;
++-----------------------------+--------------+
+; Simulation Start Time       ; 0 ps         ;
+; Simulation End Time         ; 1.0 us       ;
+; Simulation Netlist Size     ; 104 nodes    ;
+; Simulation Coverage         ;      44.23 % ;
+; Total Number of Transitions ; 2153         ;
+; Simulation Breakpoints      ; 0            ;
+; Family                      ; Cyclone II   ;
++-----------------------------+--------------+
+
+
++---------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Simulator Settings                                                                                                                                                  ;
++--------------------------------------------------------------------------------------------+--------------------------------------------------------+---------------+
+; Option                                                                                     ; Setting                                                ; Default Value ;
++--------------------------------------------------------------------------------------------+--------------------------------------------------------+---------------+
+; Simulation mode                                                                            ; Functional                                             ; Timing        ;
+; Start time                                                                                 ; 0 ns                                                   ; 0 ns          ;
+; Simulation results format                                                                  ; VWF                                                    ;               ;
+; Vector input source                                                                        ; C:/altera/13.0sp1/projeto06a/output_files/Waveform.vwf ;               ;
+; Add pins automatically to simulation output waveforms                                      ; On                                                     ; On            ;
+; Check outputs                                                                              ; Off                                                    ; Off           ;
+; Report simulation coverage                                                                 ; On                                                     ; On            ;
+; Display complete 1/0 value coverage report                                                 ; On                                                     ; On            ;
+; Display missing 1-value coverage report                                                    ; On                                                     ; On            ;
+; Display missing 0-value coverage report                                                    ; On                                                     ; On            ;
+; Detect setup and hold time violations                                                      ; Off                                                    ; Off           ;
+; Detect glitches                                                                            ; Off                                                    ; Off           ;
+; Disable timing delays in Timing Simulation                                                 ; Off                                                    ; Off           ;
+; Generate Signal Activity File                                                              ; Off                                                    ; Off           ;
+; Generate VCD File for PowerPlay Power Analyzer                                             ; Off                                                    ; Off           ;
+; Group bus channels in simulation results                                                   ; Off                                                    ; Off           ;
+; Preserve fewer signal transitions to reduce memory requirements                            ; On                                                     ; On            ;
+; Trigger vector comparison with the specified mode                                          ; INPUT_EDGE                                             ; INPUT_EDGE    ;
+; Disable setup and hold time violations detection in input registers of bi-directional pins ; Off                                                    ; Off           ;
+; Overwrite Waveform Inputs With Simulation Outputs                                          ; Off                                                    ;               ;
+; Perform Glitch Filtering in Timing Simulation                                              ; Auto                                                   ; Auto          ;
++--------------------------------------------------------------------------------------------+--------------------------------------------------------+---------------+
+
+
++----------------------+
+; Simulation Waveforms ;
++----------------------+
+Waveform report data cannot be output to ASCII.
+Please use Quartus II 64-Bit to view the waveform report data.
+
+
++--------------------------------------------------------------------+
+; Coverage Summary                                                   ;
++-----------------------------------------------------+--------------+
+; Type                                                ; Value        ;
++-----------------------------------------------------+--------------+
+; Total coverage as a percentage                      ;      44.23 % ;
+; Total nodes checked                                 ; 104          ;
+; Total output ports checked                          ; 104          ;
+; Total output ports with complete 1/0-value coverage ; 46           ;
+; Total output ports with no 1/0-value coverage       ; 58           ;
+; Total output ports with no 1-value coverage         ; 58           ;
+; Total output ports with no 0-value coverage         ; 58           ;
++-----------------------------------------------------+--------------+
+
+
+The following table displays output ports that toggle between 1 and 0 during simulation.
++----------------------------------------------------------------------------------------------------+
+; Complete 1/0-Value Coverage                                                                        ;
++----------------------------------------+----------------------------------------+------------------+
+; Node Name                              ; Output Port Name                       ; Output Port Type ;
++----------------------------------------+----------------------------------------+------------------+
+; |contador_2dig|A0                      ; |contador_2dig|A0                      ; pin_out          ;
+; |contador_2dig|CLK                     ; |contador_2dig|CLK                     ; out              ;
+; |contador_2dig|B0                      ; |contador_2dig|B0                      ; pin_out          ;
+; |contador_2dig|C0                      ; |contador_2dig|C0                      ; pin_out          ;
+; |contador_2dig|D0                      ; |contador_2dig|D0                      ; pin_out          ;
+; |contador_2dig|E0                      ; |contador_2dig|E0                      ; pin_out          ;
+; |contador_2dig|F0                      ; |contador_2dig|F0                      ; pin_out          ;
+; |contador_2dig|G0                      ; |contador_2dig|G0                      ; pin_out          ;
+; |contador_2dig|74190:inst2|47          ; |contador_2dig|74190:inst2|47          ; out0             ;
+; |contador_2dig|74190:inst2|59          ; |contador_2dig|74190:inst2|59          ; out0             ;
+; |contador_2dig|74190:inst2|39          ; |contador_2dig|74190:inst2|39          ; out0             ;
+; |contador_2dig|74190:inst2|13          ; |contador_2dig|74190:inst2|13          ; out0             ;
+; |contador_2dig|74190:inst2|44          ; |contador_2dig|74190:inst2|44          ; out0             ;
+; |contador_2dig|74190:inst|58           ; |contador_2dig|74190:inst|58           ; out0             ;
+; |contador_2dig|74190:inst|41           ; |contador_2dig|74190:inst|41           ; out0             ;
+; |contador_2dig|74190:inst|51           ; |contador_2dig|74190:inst|51           ; regout           ;
+; |contador_2dig|74190:inst|47           ; |contador_2dig|74190:inst|47           ; out0             ;
+; |contador_2dig|74190:inst|59           ; |contador_2dig|74190:inst|59           ; out0             ;
+; |contador_2dig|74190:inst|39           ; |contador_2dig|74190:inst|39           ; out0             ;
+; |contador_2dig|74190:inst|48           ; |contador_2dig|74190:inst|48           ; regout           ;
+; |contador_2dig|74190:inst|49           ; |contador_2dig|74190:inst|49           ; regout           ;
+; |contador_2dig|74190:inst|45           ; |contador_2dig|74190:inst|45           ; out0             ;
+; |contador_2dig|74190:inst|42           ; |contador_2dig|74190:inst|42           ; out0             ;
+; |contador_2dig|74190:inst|63           ; |contador_2dig|74190:inst|63           ; out0             ;
+; |contador_2dig|74190:inst|57           ; |contador_2dig|74190:inst|57           ; out0             ;
+; |contador_2dig|74190:inst|50           ; |contador_2dig|74190:inst|50           ; regout           ;
+; |contador_2dig|74190:inst|46           ; |contador_2dig|74190:inst|46           ; out0             ;
+; |contador_2dig|74190:inst|43           ; |contador_2dig|74190:inst|43           ; out0             ;
+; |contador_2dig|74190:inst|40           ; |contador_2dig|74190:inst|40           ; out0             ;
+; |contador_2dig|74190:inst|3            ; |contador_2dig|74190:inst|3            ; out0             ;
+; |contador_2dig|my_dec7seg:inst3|inst32 ; |contador_2dig|my_dec7seg:inst3|inst32 ; out0             ;
+; |contador_2dig|my_dec7seg:inst3|inst12 ; |contador_2dig|my_dec7seg:inst3|inst12 ; out0             ;
+; |contador_2dig|my_dec7seg:inst3|inst15 ; |contador_2dig|my_dec7seg:inst3|inst15 ; out0             ;
+; |contador_2dig|my_dec7seg:inst3|inst31 ; |contador_2dig|my_dec7seg:inst3|inst31 ; out0             ;
+; |contador_2dig|my_dec7seg:inst3|inst16 ; |contador_2dig|my_dec7seg:inst3|inst16 ; out0             ;
+; |contador_2dig|my_dec7seg:inst3|inst17 ; |contador_2dig|my_dec7seg:inst3|inst17 ; out0             ;
+; |contador_2dig|my_dec7seg:inst3|inst30 ; |contador_2dig|my_dec7seg:inst3|inst30 ; out0             ;
+; |contador_2dig|my_dec7seg:inst3|inst13 ; |contador_2dig|my_dec7seg:inst3|inst13 ; out0             ;
+; |contador_2dig|my_dec7seg:inst3|inst29 ; |contador_2dig|my_dec7seg:inst3|inst29 ; out0             ;
+; |contador_2dig|my_dec7seg:inst3|inst18 ; |contador_2dig|my_dec7seg:inst3|inst18 ; out0             ;
+; |contador_2dig|my_dec7seg:inst3|inst28 ; |contador_2dig|my_dec7seg:inst3|inst28 ; out0             ;
+; |contador_2dig|my_dec7seg:inst3|inst14 ; |contador_2dig|my_dec7seg:inst3|inst14 ; out0             ;
+; |contador_2dig|my_dec7seg:inst3|inst20 ; |contador_2dig|my_dec7seg:inst3|inst20 ; out0             ;
+; |contador_2dig|my_dec7seg:inst3|inst27 ; |contador_2dig|my_dec7seg:inst3|inst27 ; out0             ;
+; |contador_2dig|my_dec7seg:inst3|inst10 ; |contador_2dig|my_dec7seg:inst3|inst10 ; out0             ;
+; |contador_2dig|my_dec7seg:inst3|inst11 ; |contador_2dig|my_dec7seg:inst3|inst11 ; out0             ;
++----------------------------------------+----------------------------------------+------------------+
+
+
+The following table displays output ports that do not toggle to 1 during simulation.
++----------------------------------------------------------------------------------------------------+
+; Missing 1-Value Coverage                                                                           ;
++----------------------------------------+----------------------------------------+------------------+
+; Node Name                              ; Output Port Name                       ; Output Port Type ;
++----------------------------------------+----------------------------------------+------------------+
+; |contador_2dig|LDN                     ; |contador_2dig|LDN                     ; out              ;
+; |contador_2dig|U/D                     ; |contador_2dig|U/D                     ; out              ;
+; |contador_2dig|A1                      ; |contador_2dig|A1                      ; pin_out          ;
+; |contador_2dig|B1                      ; |contador_2dig|B1                      ; pin_out          ;
+; |contador_2dig|C1                      ; |contador_2dig|C1                      ; pin_out          ;
+; |contador_2dig|D1                      ; |contador_2dig|D1                      ; pin_out          ;
+; |contador_2dig|E1                      ; |contador_2dig|E1                      ; pin_out          ;
+; |contador_2dig|F1                      ; |contador_2dig|F1                      ; pin_out          ;
+; |contador_2dig|G1                      ; |contador_2dig|G1                      ; pin_out          ;
+; |contador_2dig|74190:inst2|51          ; |contador_2dig|74190:inst2|51          ; regout           ;
+; |contador_2dig|74190:inst2|48          ; |contador_2dig|74190:inst2|48          ; regout           ;
+; |contador_2dig|74190:inst2|49          ; |contador_2dig|74190:inst2|49          ; regout           ;
+; |contador_2dig|74190:inst2|45          ; |contador_2dig|74190:inst2|45          ; out0             ;
+; |contador_2dig|74190:inst2|42          ; |contador_2dig|74190:inst2|42          ; out0             ;
+; |contador_2dig|74190:inst2|63          ; |contador_2dig|74190:inst2|63          ; out0             ;
+; |contador_2dig|74190:inst2|57          ; |contador_2dig|74190:inst2|57          ; out0             ;
+; |contador_2dig|74190:inst2|50          ; |contador_2dig|74190:inst2|50          ; regout           ;
+; |contador_2dig|74190:inst2|46          ; |contador_2dig|74190:inst2|46          ; out0             ;
+; |contador_2dig|74190:inst2|43          ; |contador_2dig|74190:inst2|43          ; out0             ;
+; |contador_2dig|74190:inst2|40          ; |contador_2dig|74190:inst2|40          ; out0             ;
+; |contador_2dig|74190:inst2|61          ; |contador_2dig|74190:inst2|61          ; out0             ;
+; |contador_2dig|74190:inst2|12          ; |contador_2dig|74190:inst2|12          ; out0             ;
+; |contador_2dig|74190:inst2|62          ; |contador_2dig|74190:inst2|62          ; out0             ;
+; |contador_2dig|74190:inst2|38          ; |contador_2dig|74190:inst2|38          ; out0             ;
+; |contador_2dig|74190:inst2|60          ; |contador_2dig|74190:inst2|60          ; out0             ;
+; |contador_2dig|my_dec7seg:inst4|inst32 ; |contador_2dig|my_dec7seg:inst4|inst32 ; out0             ;
+; |contador_2dig|my_dec7seg:inst4|inst12 ; |contador_2dig|my_dec7seg:inst4|inst12 ; out0             ;
+; |contador_2dig|my_dec7seg:inst4|inst22 ; |contador_2dig|my_dec7seg:inst4|inst22 ; out0             ;
+; |contador_2dig|my_dec7seg:inst4|inst24 ; |contador_2dig|my_dec7seg:inst4|inst24 ; out0             ;
+; |contador_2dig|my_dec7seg:inst4|inst15 ; |contador_2dig|my_dec7seg:inst4|inst15 ; out0             ;
+; |contador_2dig|my_dec7seg:inst4|inst31 ; |contador_2dig|my_dec7seg:inst4|inst31 ; out0             ;
+; |contador_2dig|my_dec7seg:inst4|inst16 ; |contador_2dig|my_dec7seg:inst4|inst16 ; out0             ;
+; |contador_2dig|my_dec7seg:inst4|inst17 ; |contador_2dig|my_dec7seg:inst4|inst17 ; out0             ;
+; |contador_2dig|my_dec7seg:inst4|inst23 ; |contador_2dig|my_dec7seg:inst4|inst23 ; out0             ;
+; |contador_2dig|my_dec7seg:inst4|inst25 ; |contador_2dig|my_dec7seg:inst4|inst25 ; out0             ;
+; |contador_2dig|my_dec7seg:inst4|inst26 ; |contador_2dig|my_dec7seg:inst4|inst26 ; out0             ;
+; |contador_2dig|my_dec7seg:inst4|inst30 ; |contador_2dig|my_dec7seg:inst4|inst30 ; out0             ;
+; |contador_2dig|my_dec7seg:inst4|inst13 ; |contador_2dig|my_dec7seg:inst4|inst13 ; out0             ;
+; |contador_2dig|my_dec7seg:inst4|inst29 ; |contador_2dig|my_dec7seg:inst4|inst29 ; out0             ;
+; |contador_2dig|my_dec7seg:inst4|inst18 ; |contador_2dig|my_dec7seg:inst4|inst18 ; out0             ;
+; |contador_2dig|my_dec7seg:inst4|inst21 ; |contador_2dig|my_dec7seg:inst4|inst21 ; out0             ;
+; |contador_2dig|my_dec7seg:inst4|inst28 ; |contador_2dig|my_dec7seg:inst4|inst28 ; out0             ;
+; |contador_2dig|my_dec7seg:inst4|inst14 ; |contador_2dig|my_dec7seg:inst4|inst14 ; out0             ;
+; |contador_2dig|my_dec7seg:inst4|inst20 ; |contador_2dig|my_dec7seg:inst4|inst20 ; out0             ;
+; |contador_2dig|my_dec7seg:inst4|inst27 ; |contador_2dig|my_dec7seg:inst4|inst27 ; out0             ;
+; |contador_2dig|my_dec7seg:inst4|inst10 ; |contador_2dig|my_dec7seg:inst4|inst10 ; out0             ;
+; |contador_2dig|my_dec7seg:inst4|inst11 ; |contador_2dig|my_dec7seg:inst4|inst11 ; out0             ;
+; |contador_2dig|74190:inst|64           ; |contador_2dig|74190:inst|64           ; out0             ;
+; |contador_2dig|74190:inst|61           ; |contador_2dig|74190:inst|61           ; out0             ;
+; |contador_2dig|74190:inst|62           ; |contador_2dig|74190:inst|62           ; out0             ;
+; |contador_2dig|74190:inst|38           ; |contador_2dig|74190:inst|38           ; out0             ;
+; |contador_2dig|74190:inst|60           ; |contador_2dig|74190:inst|60           ; out0             ;
+; |contador_2dig|my_dec7seg:inst3|inst22 ; |contador_2dig|my_dec7seg:inst3|inst22 ; out0             ;
+; |contador_2dig|my_dec7seg:inst3|inst24 ; |contador_2dig|my_dec7seg:inst3|inst24 ; out0             ;
+; |contador_2dig|my_dec7seg:inst3|inst23 ; |contador_2dig|my_dec7seg:inst3|inst23 ; out0             ;
+; |contador_2dig|my_dec7seg:inst3|inst25 ; |contador_2dig|my_dec7seg:inst3|inst25 ; out0             ;
+; |contador_2dig|my_dec7seg:inst3|inst26 ; |contador_2dig|my_dec7seg:inst3|inst26 ; out0             ;
+; |contador_2dig|my_dec7seg:inst3|inst21 ; |contador_2dig|my_dec7seg:inst3|inst21 ; out0             ;
++----------------------------------------+----------------------------------------+------------------+
+
+
+The following table displays output ports that do not toggle to 0 during simulation.
++----------------------------------------------------------------------------------------------------+
+; Missing 0-Value Coverage                                                                           ;
++----------------------------------------+----------------------------------------+------------------+
+; Node Name                              ; Output Port Name                       ; Output Port Type ;
++----------------------------------------+----------------------------------------+------------------+
+; |contador_2dig|LDN                     ; |contador_2dig|LDN                     ; out              ;
+; |contador_2dig|U/D                     ; |contador_2dig|U/D                     ; out              ;
+; |contador_2dig|A1                      ; |contador_2dig|A1                      ; pin_out          ;
+; |contador_2dig|B1                      ; |contador_2dig|B1                      ; pin_out          ;
+; |contador_2dig|C1                      ; |contador_2dig|C1                      ; pin_out          ;
+; |contador_2dig|D1                      ; |contador_2dig|D1                      ; pin_out          ;
+; |contador_2dig|E1                      ; |contador_2dig|E1                      ; pin_out          ;
+; |contador_2dig|F1                      ; |contador_2dig|F1                      ; pin_out          ;
+; |contador_2dig|G1                      ; |contador_2dig|G1                      ; pin_out          ;
+; |contador_2dig|74190:inst2|51          ; |contador_2dig|74190:inst2|51          ; regout           ;
+; |contador_2dig|74190:inst2|48          ; |contador_2dig|74190:inst2|48          ; regout           ;
+; |contador_2dig|74190:inst2|49          ; |contador_2dig|74190:inst2|49          ; regout           ;
+; |contador_2dig|74190:inst2|45          ; |contador_2dig|74190:inst2|45          ; out0             ;
+; |contador_2dig|74190:inst2|42          ; |contador_2dig|74190:inst2|42          ; out0             ;
+; |contador_2dig|74190:inst2|63          ; |contador_2dig|74190:inst2|63          ; out0             ;
+; |contador_2dig|74190:inst2|57          ; |contador_2dig|74190:inst2|57          ; out0             ;
+; |contador_2dig|74190:inst2|50          ; |contador_2dig|74190:inst2|50          ; regout           ;
+; |contador_2dig|74190:inst2|46          ; |contador_2dig|74190:inst2|46          ; out0             ;
+; |contador_2dig|74190:inst2|43          ; |contador_2dig|74190:inst2|43          ; out0             ;
+; |contador_2dig|74190:inst2|40          ; |contador_2dig|74190:inst2|40          ; out0             ;
+; |contador_2dig|74190:inst2|61          ; |contador_2dig|74190:inst2|61          ; out0             ;
+; |contador_2dig|74190:inst2|12          ; |contador_2dig|74190:inst2|12          ; out0             ;
+; |contador_2dig|74190:inst2|62          ; |contador_2dig|74190:inst2|62          ; out0             ;
+; |contador_2dig|74190:inst2|38          ; |contador_2dig|74190:inst2|38          ; out0             ;
+; |contador_2dig|74190:inst2|60          ; |contador_2dig|74190:inst2|60          ; out0             ;
+; |contador_2dig|my_dec7seg:inst4|inst32 ; |contador_2dig|my_dec7seg:inst4|inst32 ; out0             ;
+; |contador_2dig|my_dec7seg:inst4|inst12 ; |contador_2dig|my_dec7seg:inst4|inst12 ; out0             ;
+; |contador_2dig|my_dec7seg:inst4|inst22 ; |contador_2dig|my_dec7seg:inst4|inst22 ; out0             ;
+; |contador_2dig|my_dec7seg:inst4|inst24 ; |contador_2dig|my_dec7seg:inst4|inst24 ; out0             ;
+; |contador_2dig|my_dec7seg:inst4|inst15 ; |contador_2dig|my_dec7seg:inst4|inst15 ; out0             ;
+; |contador_2dig|my_dec7seg:inst4|inst31 ; |contador_2dig|my_dec7seg:inst4|inst31 ; out0             ;
+; |contador_2dig|my_dec7seg:inst4|inst16 ; |contador_2dig|my_dec7seg:inst4|inst16 ; out0             ;
+; |contador_2dig|my_dec7seg:inst4|inst17 ; |contador_2dig|my_dec7seg:inst4|inst17 ; out0             ;
+; |contador_2dig|my_dec7seg:inst4|inst23 ; |contador_2dig|my_dec7seg:inst4|inst23 ; out0             ;
+; |contador_2dig|my_dec7seg:inst4|inst25 ; |contador_2dig|my_dec7seg:inst4|inst25 ; out0             ;
+; |contador_2dig|my_dec7seg:inst4|inst26 ; |contador_2dig|my_dec7seg:inst4|inst26 ; out0             ;
+; |contador_2dig|my_dec7seg:inst4|inst30 ; |contador_2dig|my_dec7seg:inst4|inst30 ; out0             ;
+; |contador_2dig|my_dec7seg:inst4|inst13 ; |contador_2dig|my_dec7seg:inst4|inst13 ; out0             ;
+; |contador_2dig|my_dec7seg:inst4|inst29 ; |contador_2dig|my_dec7seg:inst4|inst29 ; out0             ;
+; |contador_2dig|my_dec7seg:inst4|inst18 ; |contador_2dig|my_dec7seg:inst4|inst18 ; out0             ;
+; |contador_2dig|my_dec7seg:inst4|inst21 ; |contador_2dig|my_dec7seg:inst4|inst21 ; out0             ;
+; |contador_2dig|my_dec7seg:inst4|inst28 ; |contador_2dig|my_dec7seg:inst4|inst28 ; out0             ;
+; |contador_2dig|my_dec7seg:inst4|inst14 ; |contador_2dig|my_dec7seg:inst4|inst14 ; out0             ;
+; |contador_2dig|my_dec7seg:inst4|inst20 ; |contador_2dig|my_dec7seg:inst4|inst20 ; out0             ;
+; |contador_2dig|my_dec7seg:inst4|inst27 ; |contador_2dig|my_dec7seg:inst4|inst27 ; out0             ;
+; |contador_2dig|my_dec7seg:inst4|inst10 ; |contador_2dig|my_dec7seg:inst4|inst10 ; out0             ;
+; |contador_2dig|my_dec7seg:inst4|inst11 ; |contador_2dig|my_dec7seg:inst4|inst11 ; out0             ;
+; |contador_2dig|74190:inst|64           ; |contador_2dig|74190:inst|64           ; out0             ;
+; |contador_2dig|74190:inst|61           ; |contador_2dig|74190:inst|61           ; out0             ;
+; |contador_2dig|74190:inst|62           ; |contador_2dig|74190:inst|62           ; out0             ;
+; |contador_2dig|74190:inst|38           ; |contador_2dig|74190:inst|38           ; out0             ;
+; |contador_2dig|74190:inst|60           ; |contador_2dig|74190:inst|60           ; out0             ;
+; |contador_2dig|my_dec7seg:inst3|inst22 ; |contador_2dig|my_dec7seg:inst3|inst22 ; out0             ;
+; |contador_2dig|my_dec7seg:inst3|inst24 ; |contador_2dig|my_dec7seg:inst3|inst24 ; out0             ;
+; |contador_2dig|my_dec7seg:inst3|inst23 ; |contador_2dig|my_dec7seg:inst3|inst23 ; out0             ;
+; |contador_2dig|my_dec7seg:inst3|inst25 ; |contador_2dig|my_dec7seg:inst3|inst25 ; out0             ;
+; |contador_2dig|my_dec7seg:inst3|inst26 ; |contador_2dig|my_dec7seg:inst3|inst26 ; out0             ;
+; |contador_2dig|my_dec7seg:inst3|inst21 ; |contador_2dig|my_dec7seg:inst3|inst21 ; out0             ;
++----------------------------------------+----------------------------------------+------------------+
+
+
++---------------------+
+; Simulator INI Usage ;
++--------+------------+
+; Option ; Usage      ;
++--------+------------+
+
+
++--------------------+
+; Simulator Messages ;
++--------------------+
+Info: *******************************************************************
+Info: Running Quartus II 64-Bit Simulator
+    Info: Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
+    Info: Processing started: Wed Apr 19 11:09:27 2023
+Info: Command: quartus_sim --simulation_results_format=VWF contador_2dig -c contador_2dig
+Info (324025): Using vector source file "C:/altera/13.0sp1/projeto06a/output_files/Waveform.vwf"
+Info (310003): Option to preserve fewer signal transitions to reduce memory requirements is enabled
+    Info (310004): Simulation has been partitioned into sub-simulations according to the maximum transition count determined by the engine. Transitions from memory will be flushed out to disk at the end of each sub-simulation to reduce memory requirements.
+Warning (324036): Found clock-sensitive change during active clock edge at time 5.0 ns on register "|contador_2dig|74190:inst2|51"
+Warning (324036): Found clock-sensitive change during active clock edge at time 5.0 ns on register "|contador_2dig|74190:inst2|48"
+Info (310002): Simulation partitioned into 1 sub-simulations
+Info (328053): Simulation coverage is      44.23 %
+Info (328052): Number of transitions in simulation is 2153
+Info (324045): Vector file contador_2dig.sim.vwf is saved in VWF text format. You can compress it into CVWF format in order to reduce file size. For more details please refer to the Quartus II Help.
+Info: Quartus II 64-Bit Simulator was successful. 0 errors, 2 warnings
+    Info: Peak virtual memory: 314 megabytes
+    Info: Processing ended: Wed Apr 19 11:09:27 2023
+    Info: Elapsed time: 00:00:00
+    Info: Total CPU time (on all processors): 00:00:01
+
+

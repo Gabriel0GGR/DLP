@@ -1,0 +1,19 @@
+
+State Machine - |fsm_temp|estado
+Name estado.s15 estado.s14 estado.s13 estado.s12 estado.s11 estado.s10 estado.s9 estado.s8 estado.s7 estado.s6 estado.s5 estado.s4 estado.s3 estado.s2 estado.s1 estado.s0 
+estado.s0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+estado.s1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 1 
+estado.s2 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 1 
+estado.s3 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 1 
+estado.s4 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 1 
+estado.s5 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 1 
+estado.s6 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 1 
+estado.s7 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 1 
+estado.s8 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 1 
+estado.s9 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 1 
+estado.s10 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 1 
+estado.s11 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 1 
+estado.s12 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 1 
+estado.s13 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 1 
+estado.s14 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 1 
+estado.s15 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 

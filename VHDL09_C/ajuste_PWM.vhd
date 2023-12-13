@@ -1,0 +1,61 @@
+library ieee;
+use ieee.std_logic_1164.all;
+use ieee.numeric_std.all;
+library teste;
+
+entity ajuste_pwm is
+	port
+	(
+		clk, up, down:in std_logic;
+		count:buffer unsigned(7 downto 0);
+		pwm_out,A0,B0,C0,D0,E0,F0,G0,A1,B1,C1,D1,E1,F1,G1,A2,B2,C2,D2,E2,F2,G2,A3,B3,C3,D3,E3,F3,G3:out std_logic
+	);
+end ajuste_pwm;
+
+architecture ajuste_pwm_arch of ajuste_pwm is
+	begin
+		inst0: contador
+		port map
+		(
+			clk => clk,
+			up => up,
+			down => down,
+			cout => count,
+			A0 => A0,
+			B0 => B0,
+			C0 => C0,
+			D0 => D0,
+			E0 => E0,
+			F0 => F0,
+			G0 => G0,
+			A1 => A1,
+			B1 => B1,
+			C1 => C1,
+			D1 => D1,
+			E1 => E1,
+			F1 => F1,
+			G1 => G1,
+			A2 => A2,
+			B2 => B2,
+			C2 => C2,
+			D2 => D2,
+			E2 => E2,
+			F2 => F2,
+			G2 => G2,
+			A3 => A3,
+			B3 => B3,
+			C3 => C3,
+			D3 => D3,
+			E3 => E3,
+			F3 => F3,
+			G3 => G3
+		);
+		
+		inst1: pwm
+		port map
+		(
+			clk => clk,
+			count => count,
+			pwm_out => pwm_out
+		);
+end architecture;

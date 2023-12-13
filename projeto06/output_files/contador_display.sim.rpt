@@ -1,0 +1,208 @@
+Simulator report for contador_display
+Wed May 25 10:21:49 2022
+Quartus II 64-Bit Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
+
+
+---------------------
+; Table of Contents ;
+---------------------
+  1. Legal Notice
+  2. Simulator Summary
+  3. Simulator Settings
+  4. Simulation Waveforms
+  5. Coverage Summary
+  6. Complete 1/0-Value Coverage
+  7. Missing 1-Value Coverage
+  8. Missing 0-Value Coverage
+  9. Simulator INI Usage
+ 10. Simulator Messages
+
+
+
+----------------
+; Legal Notice ;
+----------------
+Copyright (C) 1991-2013 Altera Corporation
+Your use of Altera Corporation's design tools, logic functions 
+and other software and tools, and its AMPP partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Altera Program License 
+Subscription Agreement, Altera MegaCore Function License 
+Agreement, or other applicable license agreement, including, 
+without limitation, that your use is for the sole purpose of 
+programming logic devices manufactured by Altera and sold by 
+Altera or its authorized distributors.  Please refer to the 
+applicable agreement for further details.
+
+
+
++--------------------------------------------+
+; Simulator Summary                          ;
++-----------------------------+--------------+
+; Type                        ; Value        ;
++-----------------------------+--------------+
+; Simulation Start Time       ; 0 ps         ;
+; Simulation End Time         ; 1.0 us       ;
+; Simulation Netlist Size     ; 48 nodes     ;
+; Simulation Coverage         ;      97.87 % ;
+; Total Number of Transitions ; 2119         ;
+; Simulation Breakpoints      ; 0            ;
+; Family                      ; Cyclone II   ;
++-----------------------------+--------------+
+
+
++-------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Simulator Settings                                                                                                                                    ;
++--------------------------------------------------------------------------------------------+------------------------------------------+---------------+
+; Option                                                                                     ; Setting                                  ; Default Value ;
++--------------------------------------------------------------------------------------------+------------------------------------------+---------------+
+; Simulation mode                                                                            ; Functional                               ; Timing        ;
+; Start time                                                                                 ; 0 ns                                     ; 0 ns          ;
+; Simulation results format                                                                  ; VWF                                      ;               ;
+; Vector input source                                                                        ; C:/altera/13.0sp1/projeto06/Waveform.vwf ;               ;
+; Add pins automatically to simulation output waveforms                                      ; On                                       ; On            ;
+; Check outputs                                                                              ; Off                                      ; Off           ;
+; Report simulation coverage                                                                 ; On                                       ; On            ;
+; Display complete 1/0 value coverage report                                                 ; On                                       ; On            ;
+; Display missing 1-value coverage report                                                    ; On                                       ; On            ;
+; Display missing 0-value coverage report                                                    ; On                                       ; On            ;
+; Detect setup and hold time violations                                                      ; Off                                      ; Off           ;
+; Detect glitches                                                                            ; Off                                      ; Off           ;
+; Disable timing delays in Timing Simulation                                                 ; Off                                      ; Off           ;
+; Generate Signal Activity File                                                              ; Off                                      ; Off           ;
+; Generate VCD File for PowerPlay Power Analyzer                                             ; Off                                      ; Off           ;
+; Group bus channels in simulation results                                                   ; Off                                      ; Off           ;
+; Preserve fewer signal transitions to reduce memory requirements                            ; On                                       ; On            ;
+; Trigger vector comparison with the specified mode                                          ; INPUT_EDGE                               ; INPUT_EDGE    ;
+; Disable setup and hold time violations detection in input registers of bi-directional pins ; Off                                      ; Off           ;
+; Overwrite Waveform Inputs With Simulation Outputs                                          ; Off                                      ;               ;
+; Perform Glitch Filtering in Timing Simulation                                              ; Auto                                     ; Auto          ;
++--------------------------------------------------------------------------------------------+------------------------------------------+---------------+
+
+
++----------------------+
+; Simulation Waveforms ;
++----------------------+
+Waveform report data cannot be output to ASCII.
+Please use Quartus II 64-Bit to view the waveform report data.
+
+
++--------------------------------------------------------------------+
+; Coverage Summary                                                   ;
++-----------------------------------------------------+--------------+
+; Type                                                ; Value        ;
++-----------------------------------------------------+--------------+
+; Total coverage as a percentage                      ;      97.87 % ;
+; Total nodes checked                                 ; 48           ;
+; Total output ports checked                          ; 47           ;
+; Total output ports with complete 1/0-value coverage ; 46           ;
+; Total output ports with no 1/0-value coverage       ; 0            ;
+; Total output ports with no 1-value coverage         ; 0            ;
+; Total output ports with no 0-value coverage         ; 1            ;
++-----------------------------------------------------+--------------+
+
+
+The following table displays output ports that toggle between 1 and 0 during simulation.
++--------------------------------------------------------------------------------------------------------+
+; Complete 1/0-Value Coverage                                                                            ;
++------------------------------------------+------------------------------------------+------------------+
+; Node Name                                ; Output Port Name                         ; Output Port Type ;
++------------------------------------------+------------------------------------------+------------------+
+; |contador_display|A                      ; |contador_display|A                      ; pin_out          ;
+; |contador_display|CLK                    ; |contador_display|CLK                    ; out              ;
+; |contador_display|CLR                    ; |contador_display|CLR                    ; out              ;
+; |contador_display|B                      ; |contador_display|B                      ; pin_out          ;
+; |contador_display|C                      ; |contador_display|C                      ; pin_out          ;
+; |contador_display|D                      ; |contador_display|D                      ; pin_out          ;
+; |contador_display|E                      ; |contador_display|E                      ; pin_out          ;
+; |contador_display|F                      ; |contador_display|F                      ; pin_out          ;
+; |contador_display|G                      ; |contador_display|G                      ; pin_out          ;
+; |contador_display|4count:inst2|45        ; |contador_display|4count:inst2|45        ; regout           ;
+; |contador_display|4count:inst2|41        ; |contador_display|4count:inst2|41        ; out0             ;
+; |contador_display|4count:inst2|56        ; |contador_display|4count:inst2|56        ; out0             ;
+; |contador_display|4count:inst2|25        ; |contador_display|4count:inst2|25        ; out0             ;
+; |contador_display|4count:inst2|24        ; |contador_display|4count:inst2|24        ; out0             ;
+; |contador_display|4count:inst2|44        ; |contador_display|4count:inst2|44        ; regout           ;
+; |contador_display|4count:inst2|40        ; |contador_display|4count:inst2|40        ; out0             ;
+; |contador_display|4count:inst2|55        ; |contador_display|4count:inst2|55        ; out0             ;
+; |contador_display|4count:inst2|29        ; |contador_display|4count:inst2|29        ; out0             ;
+; |contador_display|4count:inst2|28        ; |contador_display|4count:inst2|28        ; out0             ;
+; |contador_display|4count:inst2|43        ; |contador_display|4count:inst2|43        ; regout           ;
+; |contador_display|4count:inst2|39        ; |contador_display|4count:inst2|39        ; out0             ;
+; |contador_display|4count:inst2|54        ; |contador_display|4count:inst2|54        ; out0             ;
+; |contador_display|4count:inst2|33        ; |contador_display|4count:inst2|33        ; out0             ;
+; |contador_display|4count:inst2|32        ; |contador_display|4count:inst2|32        ; out0             ;
+; |contador_display|my_dec7seg:inst|inst22 ; |contador_display|my_dec7seg:inst|inst22 ; out0             ;
+; |contador_display|my_dec7seg:inst|inst1  ; |contador_display|my_dec7seg:inst|inst1  ; out0             ;
+; |contador_display|my_dec7seg:inst|inst11 ; |contador_display|my_dec7seg:inst|inst11 ; out0             ;
+; |contador_display|my_dec7seg:inst|inst13 ; |contador_display|my_dec7seg:inst|inst13 ; out0             ;
+; |contador_display|my_dec7seg:inst|inst4  ; |contador_display|my_dec7seg:inst|inst4  ; out0             ;
+; |contador_display|my_dec7seg:inst|inst50 ; |contador_display|my_dec7seg:inst|inst50 ; out0             ;
+; |contador_display|my_dec7seg:inst|inst5  ; |contador_display|my_dec7seg:inst|inst5  ; out0             ;
+; |contador_display|my_dec7seg:inst|inst6  ; |contador_display|my_dec7seg:inst|inst6  ; out0             ;
+; |contador_display|my_dec7seg:inst|inst12 ; |contador_display|my_dec7seg:inst|inst12 ; out0             ;
+; |contador_display|my_dec7seg:inst|inst14 ; |contador_display|my_dec7seg:inst|inst14 ; out0             ;
+; |contador_display|my_dec7seg:inst|inst15 ; |contador_display|my_dec7seg:inst|inst15 ; out0             ;
+; |contador_display|my_dec7seg:inst|inst23 ; |contador_display|my_dec7seg:inst|inst23 ; out0             ;
+; |contador_display|my_dec7seg:inst|inst2  ; |contador_display|my_dec7seg:inst|inst2  ; out0             ;
+; |contador_display|my_dec7seg:inst|inst29 ; |contador_display|my_dec7seg:inst|inst29 ; out0             ;
+; |contador_display|my_dec7seg:inst|inst7  ; |contador_display|my_dec7seg:inst|inst7  ; out0             ;
+; |contador_display|my_dec7seg:inst|inst10 ; |contador_display|my_dec7seg:inst|inst10 ; out0             ;
+; |contador_display|my_dec7seg:inst|inst30 ; |contador_display|my_dec7seg:inst|inst30 ; out0             ;
+; |contador_display|my_dec7seg:inst|inst3  ; |contador_display|my_dec7seg:inst|inst3  ; out0             ;
+; |contador_display|my_dec7seg:inst|inst9  ; |contador_display|my_dec7seg:inst|inst9  ; out0             ;
+; |contador_display|my_dec7seg:inst|inst31 ; |contador_display|my_dec7seg:inst|inst31 ; out0             ;
+; |contador_display|my_dec7seg:inst|inst27 ; |contador_display|my_dec7seg:inst|inst27 ; out0             ;
+; |contador_display|my_dec7seg:inst|inst   ; |contador_display|my_dec7seg:inst|inst   ; out0             ;
++------------------------------------------+------------------------------------------+------------------+
+
+
+The following table displays output ports that do not toggle to 1 during simulation.
++-------------------------------------------------+
+; Missing 1-Value Coverage                        ;
++-----------+------------------+------------------+
+; Node Name ; Output Port Name ; Output Port Type ;
++-----------+------------------+------------------+
+
+
+The following table displays output ports that do not toggle to 0 during simulation.
++--------------------------------------------------------------------+
+; Missing 0-Value Coverage                                           ;
++------------------------+------------------------+------------------+
+; Node Name              ; Output Port Name       ; Output Port Type ;
++------------------------+------------------------+------------------+
+; |contador_display|DNUP ; |contador_display|DNUP ; out              ;
++------------------------+------------------------+------------------+
+
+
++---------------------+
+; Simulator INI Usage ;
++--------+------------+
+; Option ; Usage      ;
++--------+------------+
+
+
++--------------------+
+; Simulator Messages ;
++--------------------+
+Info: *******************************************************************
+Info: Running Quartus II 64-Bit Simulator
+    Info: Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
+    Info: Processing started: Wed May 25 10:21:49 2022
+Info: Command: quartus_sim --simulation_results_format=VWF contador_display -c contador_display
+Info (324025): Using vector source file "C:/altera/13.0sp1/projeto06/Waveform.vwf"
+Info (310003): Option to preserve fewer signal transitions to reduce memory requirements is enabled
+    Info (310004): Simulation has been partitioned into sub-simulations according to the maximum transition count determined by the engine. Transitions from memory will be flushed out to disk at the end of each sub-simulation to reduce memory requirements.
+Info (310002): Simulation partitioned into 1 sub-simulations
+Info (328053): Simulation coverage is      97.87 %
+Info (328052): Number of transitions in simulation is 2119
+Info (324045): Vector file contador_display.sim.vwf is saved in VWF text format. You can compress it into CVWF format in order to reduce file size. For more details please refer to the Quartus II Help.
+Info: Quartus II 64-Bit Simulator was successful. 0 errors, 0 warnings
+    Info: Peak virtual memory: 314 megabytes
+    Info: Processing ended: Wed May 25 10:21:49 2022
+    Info: Elapsed time: 00:00:00
+    Info: Total CPU time (on all processors): 00:00:00
+
+

@@ -1,0 +1,19 @@
+|rom_sinc
+clk => reg_address[0].CLK
+clk => reg_address[1].CLK
+clk => reg_address[2].CLK
+clk => reg_address[3].CLK
+address[0] => reg_address[0].DATAIN
+address[1] => reg_address[1].DATAIN
+address[2] => reg_address[2].DATAIN
+address[3] => reg_address[3].DATAIN
+data_out[0] <= Mux7.DB_MAX_OUTPUT_PORT_TYPE
+data_out[1] <= Mux6.DB_MAX_OUTPUT_PORT_TYPE
+data_out[2] <= Mux5.DB_MAX_OUTPUT_PORT_TYPE
+data_out[3] <= Mux4.DB_MAX_OUTPUT_PORT_TYPE
+data_out[4] <= Mux3.DB_MAX_OUTPUT_PORT_TYPE
+data_out[5] <= Mux2.DB_MAX_OUTPUT_PORT_TYPE
+data_out[6] <= Mux1.DB_MAX_OUTPUT_PORT_TYPE
+data_out[7] <= Mux0.DB_MAX_OUTPUT_PORT_TYPE
+
+

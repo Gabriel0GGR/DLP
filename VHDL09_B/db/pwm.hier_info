@@ -1,0 +1,47 @@
+|pwm
+clk => pwm_out~reg0.CLK
+clk => fcont[0].CLK
+clk => fcont[1].CLK
+clk => fcont[2].CLK
+clk => fcont[3].CLK
+clk => fcont[4].CLK
+clk => fcont[5].CLK
+clk => fcont[6].CLK
+clk => fcont[7].CLK
+clk => clk_div[0].CLK
+clk => clk_div[1].CLK
+clk => clk_div[2].CLK
+clk => clk_div[3].CLK
+clk => clk_div[4].CLK
+clk => clk_div[5].CLK
+clk => clk_div[6].CLK
+clk => clk_div[7].CLK
+clk => clk_div[8].CLK
+clk => clk_div[9].CLK
+clk => clk_div[10].CLK
+clk => clk_div[11].CLK
+clk => clk_div[12].CLK
+clk => clk_div[13].CLK
+clk => clk_div[14].CLK
+clk => clk_div[15].CLK
+clk => clk_div[16].CLK
+clk => clk_div[17].CLK
+clk => clk_div[18].CLK
+clk => clk_div[19].CLK
+clk => clk_div[20].CLK
+clk => clk_div[21].CLK
+clk => clk_div[22].CLK
+clk => clk_div[23].CLK
+clk => clk_div[24].CLK
+clk => clk_div[25].CLK
+count[0] => LessThan0.IN8
+count[1] => LessThan0.IN7
+count[2] => LessThan0.IN6
+count[3] => LessThan0.IN5
+count[4] => LessThan0.IN4
+count[5] => LessThan0.IN3
+count[6] => LessThan0.IN2
+count[7] => LessThan0.IN1
+pwm_out <= pwm_out~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+

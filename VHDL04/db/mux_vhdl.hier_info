@@ -1,0 +1,21 @@
+|mux_vhdl
+a[0] => Mux2.IN1
+a[1] => Mux1.IN1
+a[2] => Mux0.IN1
+b[0] => Mux2.IN2
+b[1] => Mux1.IN2
+b[2] => Mux0.IN2
+c[0] => Mux2.IN3
+c[1] => Mux1.IN3
+c[2] => Mux0.IN3
+s[0] => Mux0.IN5
+s[0] => Mux1.IN5
+s[0] => Mux2.IN5
+s[1] => Mux0.IN4
+s[1] => Mux1.IN4
+s[1] => Mux2.IN4
+q[0] <= Mux2.DB_MAX_OUTPUT_PORT_TYPE
+q[1] <= Mux1.DB_MAX_OUTPUT_PORT_TYPE
+q[2] <= Mux0.DB_MAX_OUTPUT_PORT_TYPE
+
+

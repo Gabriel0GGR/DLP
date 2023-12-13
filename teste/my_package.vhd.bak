@@ -1,0 +1,12 @@
+library ieee;
+use ieee.std_logic_1164.all
+
+package my_package is
+component my_dec7seg_vhdl is
+	port
+	(
+		D0,D1,D2,D3:in std_logic;
+		A,B,C,D,E,F,G:out std_logic
+	);
+end component;
+end package;

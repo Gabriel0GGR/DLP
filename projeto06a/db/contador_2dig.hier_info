@@ -1,0 +1,159 @@
+|contador_2dig
+A0 <= my_dec7seg:inst3.A
+LDN => 74190:inst.LDN
+LDN => 74190:inst2.LDN
+CLK => 74190:inst.CLK
+CLK => 74190:inst2.CLK
+U/D => 74190:inst.DNUP
+U/D => 74190:inst2.DNUP
+B0 <= my_dec7seg:inst3.B
+C0 <= my_dec7seg:inst3.C
+D0 <= my_dec7seg:inst3.D
+E0 <= my_dec7seg:inst3.E
+F0 <= my_dec7seg:inst3.F
+G0 <= my_dec7seg:inst3.G
+A1 <= my_dec7seg:inst4.A
+B1 <= my_dec7seg:inst4.B
+C1 <= my_dec7seg:inst4.C
+D1 <= my_dec7seg:inst4.D
+E1 <= my_dec7seg:inst4.E
+F1 <= my_dec7seg:inst4.F
+G1 <= my_dec7seg:inst4.G
+
+
+|contador_2dig|my_dec7seg:inst3
+A <= inst32.DB_MAX_OUTPUT_PORT_TYPE
+D3 => inst.IN0
+D3 => inst22.IN0
+D3 => inst24.IN0
+D3 => inst23.IN0
+D3 => inst25.IN0
+D3 => inst26.IN0
+D3 => inst21.IN0
+D3 => inst20.IN0
+D2 => inst1.IN0
+D2 => inst24.IN1
+D2 => inst15.IN1
+D2 => inst16.IN1
+D2 => inst17.IN1
+D2 => inst23.IN1
+D2 => inst25.IN1
+D2 => inst26.IN1
+D2 => inst18.IN1
+D1 => inst2.IN0
+D1 => inst22.IN2
+D1 => inst17.IN2
+D1 => inst25.IN2
+D1 => inst26.IN2
+D1 => inst13.IN2
+D1 => inst18.IN2
+D1 => inst21.IN2
+D1 => inst14.IN2
+D0 => inst12.IN3
+D0 => inst22.IN3
+D0 => inst24.IN3
+D0 => inst3.IN0
+D0 => inst16.IN3
+D0 => inst26.IN3
+D0 => inst18.IN3
+D0 => inst14.IN3
+D0 => inst20.IN3
+B <= inst31.DB_MAX_OUTPUT_PORT_TYPE
+C <= inst30.DB_MAX_OUTPUT_PORT_TYPE
+D <= inst29.DB_MAX_OUTPUT_PORT_TYPE
+E <= inst28.DB_MAX_OUTPUT_PORT_TYPE
+F <= inst27.DB_MAX_OUTPUT_PORT_TYPE
+G <= inst10.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|contador_2dig|74190:inst
+RCON <= 58.DB_MAX_OUTPUT_PORT_TYPE
+D => 20.IN0
+LDN => 32.IN0
+CLK => 51.CLK
+CLK => 48.CLK
+CLK => 49.CLK
+CLK => 50.CLK
+CLK => 29.IN0
+GN => 13.IN0
+GN => 37.IN0
+GN => 12.IN1
+DNUP => 30.IN0
+A => 26.IN0
+B => 24.IN0
+C => 22.IN0
+MXMN <= 41.DB_MAX_OUTPUT_PORT_TYPE
+QA <= 48.DB_MAX_OUTPUT_PORT_TYPE
+QB <= 49.DB_MAX_OUTPUT_PORT_TYPE
+QC <= 50.DB_MAX_OUTPUT_PORT_TYPE
+QD <= 51.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|contador_2dig|my_dec7seg:inst4
+A <= inst32.DB_MAX_OUTPUT_PORT_TYPE
+D3 => inst.IN0
+D3 => inst22.IN0
+D3 => inst24.IN0
+D3 => inst23.IN0
+D3 => inst25.IN0
+D3 => inst26.IN0
+D3 => inst21.IN0
+D3 => inst20.IN0
+D2 => inst1.IN0
+D2 => inst24.IN1
+D2 => inst15.IN1
+D2 => inst16.IN1
+D2 => inst17.IN1
+D2 => inst23.IN1
+D2 => inst25.IN1
+D2 => inst26.IN1
+D2 => inst18.IN1
+D1 => inst2.IN0
+D1 => inst22.IN2
+D1 => inst17.IN2
+D1 => inst25.IN2
+D1 => inst26.IN2
+D1 => inst13.IN2
+D1 => inst18.IN2
+D1 => inst21.IN2
+D1 => inst14.IN2
+D0 => inst12.IN3
+D0 => inst22.IN3
+D0 => inst24.IN3
+D0 => inst3.IN0
+D0 => inst16.IN3
+D0 => inst26.IN3
+D0 => inst18.IN3
+D0 => inst14.IN3
+D0 => inst20.IN3
+B <= inst31.DB_MAX_OUTPUT_PORT_TYPE
+C <= inst30.DB_MAX_OUTPUT_PORT_TYPE
+D <= inst29.DB_MAX_OUTPUT_PORT_TYPE
+E <= inst28.DB_MAX_OUTPUT_PORT_TYPE
+F <= inst27.DB_MAX_OUTPUT_PORT_TYPE
+G <= inst10.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|contador_2dig|74190:inst2
+RCON <= 58.DB_MAX_OUTPUT_PORT_TYPE
+D => 20.IN0
+LDN => 32.IN0
+CLK => 51.CLK
+CLK => 48.CLK
+CLK => 49.CLK
+CLK => 50.CLK
+CLK => 29.IN0
+GN => 13.IN0
+GN => 37.IN0
+GN => 12.IN1
+DNUP => 30.IN0
+A => 26.IN0
+B => 24.IN0
+C => 22.IN0
+MXMN <= 41.DB_MAX_OUTPUT_PORT_TYPE
+QA <= 48.DB_MAX_OUTPUT_PORT_TYPE
+QB <= 49.DB_MAX_OUTPUT_PORT_TYPE
+QC <= 50.DB_MAX_OUTPUT_PORT_TYPE
+QD <= 51.DB_MAX_OUTPUT_PORT_TYPE
+
+

@@ -1,0 +1,40 @@
+library ieee;
+use ieee.std_logic_1164.all;
+
+entity fsm_temp is
+	port(clk, reset: in std_logic;
+	saida: out std_logic_vector(3 downto 0));
+end fsm_temp
+
+architecture fsm of fsm_temp is
+	type state is(s0,s1,s2,s3,s4);
+	signal estado, prox_estado:state;
+begin
+process(clk,reset)
+begin
+	if(reset='0')then estado<=s0;
+	elsif(clk'event and clk='1')then
+		estado<=prox_estado;
+	end if;
+end process;
+process(estado)
+begin
+	case estado is
+	when s0=>
+		saida<="0000";
+		prox_estado<=s1;
+	when s1=>
+		saida<="0001";
+		prox_estado<=s2;
+	when s2=>
+		saida<="0010";
+		prox_estado<=s3;
+	when s3=>
+		saida<="0100";
+		prox_estado<=s4;
+	when s4=>
+		saida<="1000";
+		prox_estado<=s0;
+	end case
+end process
+end fsm;

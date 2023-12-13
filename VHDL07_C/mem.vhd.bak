@@ -1,0 +1,27 @@
+library ieee;
+use std_logic_1164.all
+
+entity mem is
+port
+(
+	clk: in std_logic;
+	address: in std_logic_vector (2 downto 0);
+	output: out std_logic_vector (7 downto 0)
+);
+
+architecture mem_arch of mem is
+signal reg_address: integer range 0 to 15;
+type memeory is array(0 to 7) of std_logic_vector(7 downto 0);
+signal rom: memory;
+attribute ram_init_file: string;
+attribute ram_init_file of rom: signal is "mem.mif";
+begin
+	process(clk)
+	begin
+		if(clk'event and clk='1') then
+			reg_address<=address;
+		end if;
+	end process;
+	output<=rom;
+end mem_arch;
+

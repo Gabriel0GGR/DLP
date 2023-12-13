@@ -1,0 +1,74 @@
+library ieee;
+use ieee.std_logic_1164.all;
+
+entity gray_fsm is
+	port(clk, reset:in std_logic; saida:out std_logic_vector(3 downto 0));
+end gray_fsm;
+
+architecture fsm of gray_fsm is
+	type state is(S0,S1,S2,S3,S4,S5,S6,S7,S8,S9,S10,S11,S12,S13,S14,S15);
+	signal estado, prox_estado:state;
+begin
+	process(clk,reset)
+		begin
+			if(reset='0')
+				then estado<=0;
+			elsif(clk'event and clk='1')
+				then estado<=prox_estado;
+			end if;
+	end process;
+	process(estado)
+	begin
+		case estado is
+			when S0=>
+				saida<="0000";
+				prox_estado<=S1;
+			when S1=>
+				saida<="0001";
+				prox_estado<=S2;
+			when S2=>
+				saida<="0011";
+				prox_estado<=S3;
+			when S3=>
+				saida<="0010";
+				prox_estado<=S4;
+			when S4=>
+				saida<="0110";
+				prox_estado<=S5;
+			when S5=>
+				saida<="0111";
+				prox_estado<=S6;
+			when S6=>
+				saida<="0101";
+				prox_estado<=S7;
+			when S7=>
+				saida<="0100";
+				prox_estado<=S8;
+			when S8=>
+				saida<="1100";
+				prox_estado<=S9;
+			when S9=>
+				saida<="1101";
+				prox_estado<=S10;
+			when S10=>
+				saida<="1111";
+				prox_estado<=S11;
+			when S11=>
+				saida<="1110";
+				prox_estado<=S12;
+			when S12=>
+				saida<="1010";
+				prox_estado<=S13;
+			when S13=>
+				saida<="1011";
+				prox_estado<=S14;
+			when S14=>
+				saida<="1001"
+				prox_estado<=S15;
+			when S15=>
+				saida<="1000";
+				prox_estado<=S0;
+		end case;
+	end process;
+end fsm;
+				
